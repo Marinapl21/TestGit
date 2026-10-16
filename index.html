@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2> Elementos de Formulario HTML </h2>
+
+<form action="/action_page.php" autocomplete="on">
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <label for="fname">Nombre:</label><br>
+        <input type="text" id="name" name="fname"><br>
+        <label for="lname">Apellidos:</label><br>
+        <input type="text" id="lname"name="lname"><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset"><br>
+
+        <label for="birthdaytime">Fecha de Nacimiento (día y hora):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <input type="submit" value="Submit"><br>
+
+        <label for="phone">Número de Teléfono:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+
+<h2> ¡Registrate! </h2>
+    <form action="/action_page.php">
+        <label for="Email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="username">Nombre de usuario:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="Contraseña">Contraseña:</label><br>
+        <input type="text" id="pwd" name="pwd"><br>
+        <input type="submit" value="submit"><br>
+
+
+<h2> Tu lenguaje principal favorito </h2>
+    <form>
+        <input type="radio" id="html" name="fav_laguage" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_laguage" value="CSS">
+        <label for="CSS">CSS</label><br>
+        <input type="radio" id="JavaScript" name="fav_laguage" value="JavaScript">
+        <label for="JavaScript">JavaScript</label><br>
+
+<h2>Buscador</h2>
+    <form action="/action_page.php">
+        <input list="browsers" name="browser">
+    <datalist id="browsers">
+        <option value="Edge">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+        <input type="submit">
+
+
+<h2> ¿Método de transporte que utilizas? </h2>
+    <form action="/action_page.php">
+        <input type="checkbox" id="vehiculo1" name="vehiculo1" value="Bicicleta">
+        <label for="vehiculo1">En bicicleta</label><br>
+        <input type="checkbox" id="vehiculo2" name="vehiculo2" value="Coche">
+        <label for="vehiculo2">En coche</label><br>
+        <input type="checkbox" id="vehiculo3" name="vehiculo3" value="Tren">
+        <label for="vehiculo3">Voy en tren</label><br>
+
+
+
+<h2>Color</h2>
+    <form action="/action_page.php">
+        <label for="favcolor">¿De qué color es el vehículo en el que te desplazas? </label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <input type="submit" value="Submit">
+
+<h3>Puntuación del repaso </h3>
+    <form action="/action_page.php">
+        <label for="quantity">Puntuación (del 1 al 5):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5">
+        <input type="submit" value="submit">
+
+<h2>¡Sorpresa!</h2>
+
+    <button type="button" onclick="alert('¡Pasa buena tarde :D!')">Click Me!</button>
+
+
+<h2>Comentario</h2>
+    <form action="/action_page.php">
+        <textarea name="message" rows="10" cols="30">Deja un comentario aquí.  
+        </textarea><br><br>
+        <input type="submit">
+
+    </form>
+
+</body>
+</html>
